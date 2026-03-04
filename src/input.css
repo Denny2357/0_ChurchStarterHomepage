@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================
+   CHURCH HOMEPAGE DESIGN SYSTEM
+   Color Palette:
+   - Background (dark): slate-900 / slate-800
+   - Accent (gold):     amber-400 / amber-500
+   - Text (light):      slate-100 / slate-300
+   - Text (dark):       slate-800 / slate-600
+============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+
+@layer base {
+  body {
+    @apply font-serif antialiased text-slate-800 bg-white;
+  }
+  h1, h2, h3 {
+    @apply font-serif tracking-wide;
+  }
+}
+
+@layer components {
+
+  /* ==================
+     NAVIGATION
+  ================== */
+  .nav {
+    @apply bg-slate-900 text-white sticky top-0 z-50 shadow-lg;
+    font-family: "Noto Sans KR", sans-serif;
+  }
+  .nav__inner {
+    @apply max-w-5xl mx-auto px-6 flex justify-between items-center h-16;
+  }
+  .nav__logo {
+    @apply text-amber-400 text-xl font-bold tracking-widest;
+    font-family: "Noto Sans KR", sans-serif;
+  }
+  .nav__link {
+    @apply text-slate-300 hover:text-amber-400 transition-colors duration-200 text-sm tracking-wide;
+  }
+
+  /* ==================
+     HERO SECTION
+  ================== */
+  .hero {
+    @apply bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-white min-h-screen flex items-center justify-center text-center;
+  }
+  .hero__inner {
+    @apply max-w-3xl mx-auto px-6 py-24;
+  }
+  .hero__title {
+    @apply text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-white;
+  }
+  .hero__subtitle {
+    @apply text-lg sm:text-xl text-slate-300 mb-10 leading-relaxed;
+  }
+  .hero__actions {
+    @apply flex flex-col sm:flex-row gap-4 justify-center;
+  }
+
+  /* ==================
+     BUTTONS
+  ================== */
+  .btn-primary {
+    @apply bg-amber-400 hover:bg-amber-500 text-slate-900 font-bold py-3 px-8 rounded transition duration-200 text-base tracking-wide;
+  }
+  .btn-outline {
+    @apply border-2 border-amber-400 text-amber-400 hover:bg-amber-400 hover:text-slate-900 font-bold py-3 px-8 rounded transition duration-200 text-base tracking-wide;
+  }
+
+  /* ==================
+     LAYOUT
+  ================== */
+  .section {
+    @apply py-20 px-6;
+  }
+  .section--dark {
+    @apply bg-slate-900 text-white py-20 px-6;
+  }
+  .section--light {
+    @apply bg-slate-50 py-20 px-6;
+  }
+  .inner {
+    @apply max-w-5xl mx-auto;
+  }
+
+  /* ==================
+     TYPOGRAPHY
+  ================== */
+  .section__title {
+    @apply text-3xl sm:text-4xl font-bold text-slate-900 mb-4 text-center;
+  }
+  .section__title--light {
+    @apply text-3xl sm:text-4xl font-bold text-white mb-4 text-center;
+  }
+  .section__divider {
+    @apply w-16 h-1 bg-amber-400 mx-auto mb-10;
+  }
+  .page__title {
+    @apply text-4xl font-bold text-slate-900 mb-2;
+  }
+  .page__divider {
+    @apply w-12 h-1 bg-amber-400 mb-12;
+  }
+  .card__title {
+    @apply text-xl font-bold text-slate-900 mb-3;
+  }
+  .text-body {
+    @apply text-slate-600 leading-relaxed;
+  }
+
+  /* ==================
+     CARDS
+  ================== */
+  .card {
+    @apply border-l-4 border-amber-400 bg-white pl-6 py-5 rounded-r shadow-sm;
+  }
+  .card--highlight {
+    @apply border-l-4 border-amber-400 bg-amber-50 pl-6 py-5 rounded-r;
+  }
+  .card--article {
+    @apply bg-white border border-slate-200 rounded-lg p-6 hover:shadow-md transition duration-200;
+  }
+
+  /* ==================
+     FOOTER
+  ================== */
+  .footer {
+    @apply bg-slate-900 text-slate-400 text-center py-10 text-sm tracking-wide;
+  }
+}
+
+  /* ==================
+    LOGO
+  ================== */
+  .logo {
+  transition: transform 0.3s ease;
+}
+
+  .logo:hover {
+  transform: scale(1.05);
+}
