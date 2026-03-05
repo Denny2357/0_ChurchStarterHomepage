@@ -32,7 +32,7 @@
     font-family: "Noto Sans KR", sans-serif;
   }
   .nav__inner {
-    @apply max-w-5xl mx-auto px-6 flex justify-between items-center h-16;
+    @apply max-w-5xl mx-auto px-6 flex justify-between items-center h-16 w-full;
   }
   .nav__logo {
     @apply text-amber-400 text-xl font-bold tracking-widest transition-transform duration-300;
@@ -41,8 +41,23 @@
   .nav__logo:hover {
     @apply scale-105;
   }
+  .nav__links {
+    @apply flex items-center;
+  }
   .nav__link {
     @apply text-slate-300 hover:text-amber-400 transition-colors duration-200 text-sm tracking-wide;
+  }
+  .nav__auth {
+    @apply flex items-center;
+  }
+  .nav__auth-link {
+    @apply px-4 py-2 rounded transition-all duration-200 text-sm font-medium tracking-wide;
+  }
+  .nav__auth-link.signup {
+    @apply text-slate-300 border border-amber-400 hover:bg-amber-400 hover:text-slate-900;
+  }
+  .nav__auth-link.login {
+    @apply bg-amber-400 text-slate-900 hover:bg-amber-500;
   }
 
   /* ==================
