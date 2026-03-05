@@ -605,15 +605,3 @@ h1, h2, h3 {
    - Text (light):      slate-100 / slate-300
    - Text (dark):       slate-800 / slate-600
 ============================================ */
-
-/* ==================
-    LOGO
-  ================== */
-
-.logo {
-  transition: transform 0.3s ease;
-}
-
-.logo:hover {
-  transform: scale(1.05);
-}

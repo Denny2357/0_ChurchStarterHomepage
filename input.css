@@ -35,8 +35,11 @@
     @apply max-w-5xl mx-auto px-6 flex justify-between items-center h-16;
   }
   .nav__logo {
-    @apply text-amber-400 text-xl font-bold tracking-widest;
+    @apply text-amber-400 text-xl font-bold tracking-widest transition-transform duration-300;
     font-family: "Noto Sans KR", sans-serif;
+  }
+  .nav__logo:hover {
+    @apply scale-105;
   }
   .nav__link {
     @apply text-slate-300 hover:text-amber-400 transition-colors duration-200 text-sm tracking-wide;
@@ -131,15 +134,4 @@
   .footer {
     @apply bg-slate-900 text-slate-400 text-center py-10 text-sm tracking-wide;
   }
-}
-
-  /* ==================
-    LOGO
-  ================== */
-  .logo {
-  transition: transform 0.3s ease;
-}
-
-  .logo:hover {
-  transform: scale(1.05);
 }
