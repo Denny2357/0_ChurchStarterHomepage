@@ -1,6 +1,5 @@
 # 0_ChurchStarterHomepage
-
-<<<<<<< HEAD
+week 1 &amp; ...
 
 가상 교회 홈페이지 프로젝트입니다.
 
